@@ -8,7 +8,7 @@ class opennx (
 ){
   package { 'OpenNx':
     ensure   => 'installed',
-    provider => 'appdmg',
+    provider => 'pkgdmg',
     source   => "http://freefr.dl.sourceforge.net/project/opennx/opennx/CI/OpenNX-${version}.dmg"
   }
 }
