@@ -1,14 +1,14 @@
-# Public: Install Dropbox.app into /Applications.
+# Public: Install OpenNx.app into /Applications.
 #
 # Examples
 #
-#   include dropbox
-class dropbox (
-  $version = '2.10.41',
+#   include opennx
+class opennx (
+  $version = '0.16.0.729',
 ){
-  package { 'Dropbox':
+  package { 'OpenNx':
     ensure   => 'installed',
     provider => 'appdmg',
-    source   => "https://d1ilhw0800yew8.cloudfront.net/client/Dropbox%20${version}.dmg",
+    source   => "http://freefr.dl.sourceforge.net/project/opennx/opennx/CI/OpenNX-${version}.dmg"
   }
 }

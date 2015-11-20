@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe 'dropbox' do
+describe 'opennx' do
   it do
-    should contain_package('Dropbox').with({
+    should contain_package('OpenNx').with({
       :ensure   => 'installed',
       :provider => 'appdmg'
     })
